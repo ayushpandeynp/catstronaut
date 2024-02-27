@@ -1,1 +1,42 @@
-@charset "utf-8";
+/* General styles for the body and sections */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Each section except .comic_mid takes up 100vh */
+.banner, .comic_top, .comic_end, .the_end {
+    height: 100vh;
+}
+
+/* The .comic_mid section takes up 150vh */
+.comic_mid {
+    height: 150vh;
+}
+
+/* Additional styling for content within sections */
+section h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
