@@ -1,7 +1,12 @@
 let viewportHeight = window.innerHeight;
 const button = document.querySelector("button");
+const buttonClickSound = document.getElementById('Infinity');
+const backgroundMusic = document.getElementById('ComicScore')
+backgroundMusic.loop = true;
 button.addEventListener("click", function () {
-  window.scrollTo(0, viewportHeight + 1);
+    window.scrollTo(0, viewportHeight + 1);
+    buttonClickSound.play();
+    backgroundMusic.play();
 });
 
 window.addEventListener("scroll", function () {
@@ -15,7 +20,6 @@ window.addEventListener("scroll", function () {
   ];
 
   const mid = document.querySelector(".four");
-
   const last_2 = [
     document.querySelector(".five"),
     document.querySelector(".six"),
