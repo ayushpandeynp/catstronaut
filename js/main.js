@@ -8,7 +8,7 @@ const buttonClickSound = document.getElementById("Infinity");
 // background music
 const backgroundMusic = document.getElementById("ComicScore");
 backgroundMusic.loop = true;
-backgroundMusic.volume = 0.5;
+backgroundMusic.volume = 0.3;
 
 button.addEventListener("click", function () {
   buttonClickSound.play();
