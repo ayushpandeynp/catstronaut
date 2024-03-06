@@ -3,13 +3,19 @@ let viewportHeight = window.innerHeight;
 
 // "Enter" Button click listener
 const button = document.querySelector("button");
-const buttonClickSound = document.getElementById('Infinity');
-const backgroundMusic = document.getElementById('ComicScore')
+const buttonClickSound = document.getElementById("Infinity");
+
+// background music
+const backgroundMusic = document.getElementById("ComicScore");
 backgroundMusic.loop = true;
+backgroundMusic.volume = 0.5;
+
 button.addEventListener("click", function () {
-    window.scrollTo(0, viewportHeight + 1);
-    buttonClickSound.play();
+  buttonClickSound.play();
+  setTimeout(() => {
     backgroundMusic.play();
+  });
+  window.scrollTo(0, viewportHeight + 1);
 });
 
 // scroll event listener
@@ -61,7 +67,10 @@ window.addEventListener("scroll", function () {
   }
 
   // middle rocket panel
-  if (scrollPosition > viewportHeight * 2.3) {
+  if (
+    scrollPosition > viewportHeight * 2.3 &&
+    scrollPosition < viewportHeight * 3.5
+  ) {
     mid.classList.add("active");
     let animationStartPosition =
       document.querySelector("section:nth-child(3)").offsetTop +
