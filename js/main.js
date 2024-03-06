@@ -1,4 +1,7 @@
+// total viewport height
 let viewportHeight = window.innerHeight;
+
+// "Enter" Button click listener
 const button = document.querySelector("button");
 const buttonClickSound = document.getElementById('Infinity');
 const backgroundMusic = document.getElementById('ComicScore')
@@ -9,22 +12,31 @@ button.addEventListener("click", function () {
     backgroundMusic.play();
 });
 
+// scroll event listener
 window.addEventListener("scroll", function () {
+  // current viewport height (in case of resizing the window)
   viewportHeight = window.innerHeight;
+
+  // this is the total scroll position
   const scrollPosition = window.scrollY;
 
+  // first 3 panels
   const first_3 = [
     document.querySelector(".one"),
     document.querySelector(".two"),
     document.querySelector(".three"),
   ];
 
+  // middle rocket panel
   const mid = document.querySelector(".four");
+
+  // last 2 panels
   const last_2 = [
     document.querySelector(".five"),
     document.querySelector(".six"),
   ];
 
+  // for the first 3 panels
   if (
     scrollPosition > viewportHeight &&
     scrollPosition < viewportHeight * 2.3
@@ -48,6 +60,7 @@ window.addEventListener("scroll", function () {
     });
   }
 
+  // middle rocket panel
   if (scrollPosition > viewportHeight * 2.3) {
     mid.classList.add("active");
     let animationStartPosition =
@@ -62,6 +75,7 @@ window.addEventListener("scroll", function () {
     mid.classList.remove("active");
   }
 
+  // for the last 2 panels
   if (
     scrollPosition > viewportHeight * 3.7 &&
     scrollPosition < viewportHeight * 4.8
@@ -71,12 +85,6 @@ window.addEventListener("scroll", function () {
     if (scrollPosition > viewportHeight * 4) {
       last_2[1].classList.add("active");
     }
-
-    console.log(
-      scrollPosition - viewportHeight,
-      scrollPosition,
-      viewportHeight
-    );
 
     last_2.forEach((img) => {
       img.style.transform = `translateY(${
