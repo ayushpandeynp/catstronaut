@@ -9,7 +9,7 @@ html {
 
 @font-face {
   font-family: "Conthrax";
-  src: url("/fonts/conthrax-sb.otf") format("opentype");
+  src: url("../fonts/conthrax-sb.otf") format("opentype");
 }
 
 section {
@@ -24,7 +24,7 @@ section {
   font-family: "Conthrax", sans-serif;
   position: relative;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/img/background.png");
+    url("../img/background.png");
   background-position: center center;
   background-size: cover;
 }
@@ -58,7 +58,7 @@ section h1 {
 section img {
   display: none;
   width: auto;
-  height: 250px;
+  height: 300px;
   border: solid 2px white;
   z-index: 999;
 }
@@ -87,19 +87,19 @@ button:hover {
 
 .one {
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 10%;
 }
 
 .two {
   position: absolute;
-  top: 40%;
-  left: 38.5%;
+  top: 38%;
+  left: 37.5%;
 }
 
 .three {
   position: absolute;
-  top: 40%;
+  top: 38%;
   right: 10%;
 }
 
@@ -115,13 +115,13 @@ button:hover {
 .five {
   position: absolute;
   height: 350px;
-  top: 40%;
+  top: 38%;
   left: 17%;
 }
 
 .six {
   position: absolute;
   height: 350px;
-  top: 40%;
+  top: 38%;
   left: 53%;
 }

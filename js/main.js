@@ -69,7 +69,7 @@ window.addEventListener("scroll", function () {
   // middle rocket panel
   if (
     scrollPosition > viewportHeight * 2.3 &&
-    scrollPosition < viewportHeight * 3.5
+    scrollPosition < viewportHeight * 3.7
   ) {
     mid.classList.add("active");
     let animationStartPosition =
