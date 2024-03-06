@@ -8,7 +8,7 @@ Our protagonist, a cat, looks up at the moon every night, wondering what lies fa
 [Ian]
 
 ## Sound
-[Stefan]
+To craft the soundtrack for this comic, I began by laying down a foundational chord progression in a major key, capturing the lively and spirited essence of cats. I then layered arcade-inspired synth leads and bass to infuse the composition with a science fiction ambiance, employing the distinctive timbres of digital instruments. The track is designed to evoke a sense of excitement and exploration, reflecting the adventurous spirit of the narrative.
 
 ## Website
 For the website, we have embraced a space theme that complements the comic story's narrative. Although the styling is straightforward, the interactivity is a crucial element in advancing the story. As users scroll down, the comic panels are revealed sequentially, enhancing the storytelling experience and engaging the reader in the protagonist's journey through space.
