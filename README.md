@@ -1,4 +1,4 @@
-# Interactive Comic Project
+# Catsronaut: A Space Odyssey
 This story is a cat-themed space exploration adventure, depicted through an interactive comic website. The protagonist is a cat who embarks on a journey to the moon.
 
 ## Story
